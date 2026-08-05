@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "apptim/wsgi.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "apptim/wsgi.py"
+      "source": "/(.*)",
+      "destination": "apptim/wsgi.py"
     }
   ]
 }
