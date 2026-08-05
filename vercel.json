@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "buildCommand": "bash build_files.sh",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "apptim/wsgi.py"
+      "destination": "api/index.py"
     }
   ]
 }
